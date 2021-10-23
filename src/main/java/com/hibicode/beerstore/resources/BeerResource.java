@@ -23,8 +23,12 @@ public class BeerResource {
 
     @GetMapping
     public List<Beer> all() {
-
         return beers.findAll();
+    }
+
+    @GetMapping("/{id}")
+    public Beer byId(@PathVariable Long id) {
+        return beerService.byId(id);
     }
 
     @PostMapping

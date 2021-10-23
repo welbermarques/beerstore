@@ -35,3 +35,8 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### TERRAFORM ###
+/terraform/key/**
+terraform/.terraform/
+terraform/.terraform.lock.hcl

@@ -29,6 +29,11 @@ public class BeerService {
         beers.delete(beerDatabase);
     }
 
+    public Beer byId(Long id) {
+        Beer beerDatabase = beerExist(id);
+        return beerDatabase;
+    }
+
     private Beer beerExist(Long id) {
         Optional<Beer> beerPresent = beers.findById(id);
         if(!beerPresent.isPresent()) {

@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import com.hibicode.beerstore.error.ErrorResponse.ApiError;
 
-import javax.xml.ws.Response;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
@@ -29,7 +28,6 @@ import java.util.stream.Stream;
 @RestControllerAdvice
 @RequiredArgsConstructor
 public class ApiExceptionHandler {
-
 
     private static final String NO_MESSAGE_AVAILABLE = "No message available";
     private static final Logger LOG = LoggerFactory.getLogger(ApiExceptionHandler.class);
